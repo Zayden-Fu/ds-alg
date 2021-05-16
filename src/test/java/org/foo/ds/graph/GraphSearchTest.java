@@ -116,12 +116,21 @@ public class GraphSearchTest {
 		lines.add("5");
 		lines.add("4");
 		lines.add("0 1");
+		lines.add("0 2");
 		lines.add("1 2");
 		lines.add("3 4");
-		lines.add("2 0");
+
 		Graph g = new Graph(lines);
 		Cycle cycle = new Cycle(g);
 		System.out.println(cycle.hasCycle());
+	}
+
+	/**
+	 * 测试符号图
+	 */
+	@Test
+	void test_symbol_graph(){
+
 	}
 
 }

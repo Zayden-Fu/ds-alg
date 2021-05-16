@@ -25,6 +25,9 @@ public class Cycle {
 			if (!marked[w]) {
 				dfs(g, w, v);
 			}
+			// 1、此vertex的领近vertex已经访问过
+			// 2、不是dfs上一级的vertex
+			// 说明此vertex和已访问过的其它vertex相连，也就是有环图
 			else if (w != u) {
 				hasCycle = true;
 			}
